@@ -1,0 +1,8 @@
+# Ignore .DS_Store files on OS X
+.DS_Store
+# Ignore node_modules
+node_modules/
+# Ignore SASS Cache
+.sass-cache/
+# Ignore compiled styles directory
+styles/
