@@ -20,19 +20,27 @@ You can fork either demo for your own purposes.
 
 ## Course Q&A
 
+**When we talked about progressively loading in fonts asynchronously, would we display system fallback fonts until custom web fonts load?**
+
+Yes. Remember we talked about progressive loading so that the user doesn’t see a blank screen (especially on mobile) for 3-4 seconds while  custom fonts are loading.
+
+A good bookmarklet tool I use to adjust my fallback font stack is [ffffallback](http://ffffallback.com/) because it overlays your custom typefaces over the fallback ones and you can see how well they line up.
+
+When using something like [Web Font Loader](https://github.com/typekit/webfontloader), you’ll have CSS classes and JavaScript events that you can style against while fonts are loading or have failed to load. The idea is to make your fallback typography as close to your custom typography so that the user doesn’t notice the new fonts snapping into position when they finally load.
+
 **Can you control widows and orphans in CSS?**
 
 Yes. See the [widows](https://developer.mozilla.org/en-US/docs/Web/CSS/widows) and [orphans](https://developer.mozilla.org/en-US/docs/Web/CSS/orphans) properties on MDN. Feel free to send me what you’re working on if you need help.
 
 **I don’t like how the text wraps around the image. Can you fine tune the margin between the image and text?**
 
-For ultimate control over how text wraps next to images, there's [CSS shapes](http://alistapart.com/article/css-shapes-101) which has has a [polyfill](http://codepen.io/adobe/details/3b079a5671f21d140f47ffce3801ddfa/) available for decent browser support. I'll be doing some proof of concept work on CSS shapes soon. CSS shapes make all kinds of exciting next level designs possible.
+For ultimate control over how text wraps next to images, there’s [CSS shapes](http://alistapart.com/article/css-shapes-101) which has has a [polyfill](http://codepen.io/adobe/details/3b079a5671f21d140f47ffce3801ddfa/) available for decent browser support. I’ll be doing some proof of concept work on CSS shapes soon. CSS shapes make all kinds of exciting next level designs possible.
 
 **Can you show an example of a pull quote?**
 
 A pull quote has been added to the exercise and demos.
 
-**Is there a way you can have CSS replace characters like straight quotes (') with proper curly quotes (‘’)?**
+**Is there a way you can have CSS replace characters like straight quotes (4) with proper curly quotes (‘’)?**
 
 There is no way to do this in CSS. In my pull quote example, you can see how I automatically insert a curly double quote (“) for the quotation using a psuedo-element so the user doesn’t have to type it.
 
@@ -110,6 +118,8 @@ ordinals                       | font-variant-numeric: ordinal
 
 * [Modular Scale](http://www.modularscale.com/)
 * [Sass calculator for modular scale](https://github.com/modularscale/modularscale-sass)
+* [FFFFallback font fallback bookmarklet tool](http://ffffallback.com/)
+* [Web Font Loader for progressively loading fonts from Google and TypeKit](https://github.com/typekit/webfontloader)
 * [Syntax for OpenType features in CSS from Aodbe Tykepit](http://help.typekit.com/customer/portal/articles/1789736-syntax-for-opentype-features-in-css)
 * [CSS Shapes article on A List Apart](http://alistapart.com/article/css-shapes-101)
 * [CSS Shapes Polyfill](http://codepen.io/adobe/details/3b079a5671f21d140f47ffce3801ddfa/)
