@@ -115,6 +115,7 @@ ordinals                       | font-variant-numeric: ordinal
 * [CSS Shapes Polyfill](http://codepen.io/adobe/details/3b079a5671f21d140f47ffce3801ddfa/)
 * [Controlling widows from MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/widows)
 * [Controlling orphans from MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/orphans)
+* [Contrast Ratio Calculator for WCAG 2.0 compliance by Lea Verou](http://leaverou.github.io/contrast-ratio/)
 
 ## Contributions
 
