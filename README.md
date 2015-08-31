@@ -33,6 +33,8 @@ terms and CSS.
 
 * How we might [tease](#mapping-design-terminology-to-css) a typeface with tracking, weight, small caps, ligatures, or other features so that one typeface can serve many purposes.
 
+* A bonus example of [auto-scaling](https://github.com/enesser/alice/tree/master/auto-scale) using *viewport width (vw)* units.
+
 ## Getting Started with the Materials
 
 Clone the repository from the terminal:
