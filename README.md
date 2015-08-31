@@ -48,6 +48,14 @@ But if you want to do a character replacement, there are JavaScript frameworks t
 
 I also just found an HTML pre-processor called [Typeset](https://github.com/davidmerfield/typeset). We could very easily plug something like this into our content management systems on a publish event.
 
+**What is the difference between tracking and kerning?**
+
+Tracking is the overall spacing between letters. Kerning is the offset spacing between certain letter pairs (such as when an ‘f’ appears next to a ‘t’) that have been specifically included in a kerning table in the font.
+
+**Can you show a sample of text that scales automatically with the browser size?**
+
+I have added this as an example in the ``auto-scale`` folder. You can see a live demo on [CodePen](http://codepen.io/enesser/pen/LpPpJy).
+
 ## Typography Shortcuts for Quotation
 
 Good typography uses curly quotes. The straight quotes come to us from the physical constraints of the typewriter and can make typography look industrial.
@@ -120,7 +128,7 @@ ordinals                       | font-variant-numeric: ordinal
 * [Sass calculator for modular scale](https://github.com/modularscale/modularscale-sass)
 * [FFFFallback font fallback bookmarklet tool](http://ffffallback.com/)
 * [Web Font Loader for progressively loading fonts from Google and TypeKit](https://github.com/typekit/webfontloader)
-* [Syntax for OpenType features in CSS from Aodbe Tykepit](http://help.typekit.com/customer/portal/articles/1789736-syntax-for-opentype-features-in-css)
+* [Syntax for OpenType features in CSS from Adobe TypeKit](http://help.typekit.com/customer/portal/articles/1789736-syntax-for-opentype-features-in-css)
 * [CSS Shapes article on A List Apart](http://alistapart.com/article/css-shapes-101)
 * [CSS Shapes Polyfill](http://codepen.io/adobe/details/3b079a5671f21d140f47ffce3801ddfa/)
 * [Controlling widows from MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/widows)
