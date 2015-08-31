@@ -1,35 +1,38 @@
 {
-  "name": "alice",
-  "version": "1.0.0",
-  "description": "Intro to Designing in the Browser: Creating a Web Prototype with Responsive Typography",
-  "main": "gulpfile.js",
-  "dependencies": {
-    "gulp": "^3.9.0",
-    "gulp-sass": "^2.0.4"
-  },
-  "devDependencies": {
-    "gulp": "^3.9.0",
-    "gulp-autoprefixer": "^2.3.1",
-    "gulp-sass": "^2.0.4"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/enesser/alice.git"
-  },
-  "keywords": [
-    "typography",
-    "web",
-    "prototype",
-    "prototyping",
-    "design"
-  ],
-  "author": "Eric J Nesser",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/enesser/alice/issues"
-  },
-  "homepage": "https://github.com/enesser/alice#readme"
+    "name": "alice",
+    "version": "1.0.0",
+    "description": "Intro to Designing in the Browser: Creating a Web Prototype with Responsive Typography",
+    "main": "gulpfile.js",
+    "dependencies": {
+        "gulp": "^3.9.0",
+        "gulp-sass": "^2.0.4"
+    },
+    "devDependencies": {
+        "gulp": "^3.9.0",
+        "gulp-autoprefixer": "^2.3.1",
+        "gulp-sass": "^2.0.4"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/enesser/alice.git"
+    },
+    "keywords": [
+        "typography",
+        "web",
+        "prototype",
+        "prototyping",
+        "design"
+    ],
+    "scripts": {
+        "install": "gulp"
+    },
+    "bugs": {
+        "url": "https://github.com/enesser/alice/issues"
+    },
+    "homepage": "https://github.com/enesser/alice#readme",
+    "author": "Eric J Nesser",
+    "license": "MIT"
 }

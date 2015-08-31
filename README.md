@@ -14,19 +14,50 @@ In this short course, we transformed blocks of text from Lewis Carrol’s *Alice
 
 ## Breakdown of the Course
 
+In this course, we covered:
+
+* How to add semantic markup for SEO and WCAG.
+
+* How to select and set type from [Google Fonts](https://www.google.com/fonts).
+
+* How *em* units proportionally adjust to base font sizes specified in *pixels (px)*, *points (pt)*, *inches (in)*, *centimeters (cm)*, *millimeters (mm)*, or *picas (pc)*.
+
+* How to [design to scale](#typographic-scale) for pleasing vertical rhythm.
+
+* The [mapping](#mapping-design-terminology-to-css) between designer 
+terms and CSS.
+
+* How to use breakpoints for a responsive layout.
+
+* How to use progressive font loading with [Web Font Loader](https://github.com/typekit/webfontloader) and [ffffallback](http://ffffallback.com/) so that users don't see a blank screen or screen jumping while fonts load (especially on mobile).
+
+* How we might [tease](#mapping-for-design-terminology-to-CSS) a typeface with tracking, weight, small caps, ligatures, or other features so that one typeface can serve many purposes.
+
 ## Getting Started with the Materials
 
-## Building and Running the Materials
+Clone the repository from the terminal:
+
+```shell
+$ git clone -o upstream https://github.com/enesser/alice.git MyApp
+$ cd MyApp
+$ npm install -g gulp       # Install Gulp task runner
+$ npm install               # Install dependencies
+$ open index.html           # Open the sample document in your browser (Mac OS)
+```
+
+### Building Assets
+
+Running ``gulp`` by itself will build the Sass into CSS:
+
+```shell
+$ gulp
+```
+
+Running ``gulp watch`` will watch for Sass changes in the assets directory and build when files are modified.
+
+If you’re not comfortable with the terminal, feel free to use the [CodePen](http://codepen.io/enesser/pen/JdgKjX) versions.
 
 ## Course Q&A
-
-**When we talked about progressively loading in fonts asynchronously, would we display system fallback fonts until custom web fonts load?**
-
-Yes. Remember we talked about progressive loading so that the user doesn’t see a blank screen (especially on mobile) for 3-4 seconds while  custom fonts are loading.
-
-A good bookmarklet tool I use to adjust my fallback font stack is [ffffallback](http://ffffallback.com/) because it overlays your custom typefaces over the fallback ones and you can see how well they line up.
-
-When using something like [Web Font Loader](https://github.com/typekit/webfontloader), you’ll have CSS classes and JavaScript events that you can style against while fonts are loading or have failed to load. The idea is to make your fallback typography as close to your custom typography so that the user doesn’t notice the new fonts snapping into position when they finally load.
 
 **Can you control widows and orphans in CSS?**
 
@@ -34,23 +65,23 @@ Yes. See the [widows](https://developer.mozilla.org/en-US/docs/Web/CSS/widows) a
 
 **I don’t like how the text wraps around the image. Can you fine tune the margin between the image and text?**
 
-For ultimate control over how text wraps next to images, there’s [CSS shapes](http://alistapart.com/article/css-shapes-101) which has has a [polyfill](http://codepen.io/adobe/details/3b079a5671f21d140f47ffce3801ddfa/) available for decent browser support. I’ll be doing some proof of concept work on CSS shapes soon. CSS shapes make all kinds of exciting next level designs possible.
-
-**Can you show an example of a pull quote?**
-
-A pull quote has been added to the exercise and demos.
+For ultimate control over how text wraps next to images, there’s [CSS shapes](http://alistapart.com/article/css-shapes-101) which has has a [polyfill](http://codepen.io/adobe/details/3b079a5671f21d140f47ffce3801ddfa/) available for decent browser support. CSS shapes make all kinds of exciting designs possible originally only possible in print or imagery.
 
 **Is there a way you can have CSS replace characters like straight quotes (') with proper curly quotes (‘’)?**
 
 There is no way to do this in CSS. In my pull quote example, you can see how I automatically insert a curly double quote (“) for the quotation using a psuedo-element so the user doesn’t have to type it.
 
-But if you want to do a character replacement, there are JavaScript frameworks that will do it. Additionally I’ve worked with the API of web word processors like TinyMCE and RadEditor to do character replacement as you type.
+But if you want to do a character replacement, there are JavaScript frameworks. Additionally I’ve worked with the API of web word processors like TinyMCE and RadEditor to do character replacement as you type.
 
-I also just found an HTML pre-processor called [Typeset](https://github.com/davidmerfield/typeset). We could very easily plug something like this into our content management systems on a publish event.
+An HTML pre-processor like [Typeset](https://github.com/davidmerfield/typeset) could easily be run from a publish event from most CMS systems.
 
 **What is the difference between tracking and kerning?**
 
 Tracking is the overall spacing between letters. Kerning is the offset spacing between certain letter pairs (such as when an ‘f’ appears next to a ‘t’) that have been specifically included in a kerning table in the font.
+
+**Can you show an example of a pull quote?**
+
+A pull quote has been added to the exercise and demos.
 
 **Can you show a sample of text that scales automatically with the browser size?**
 
@@ -85,9 +116,24 @@ subtitle             | 1.618em
 paragraph leading    | 1.618em
 element leading      | 0.618em
 
-## Mapping for Design Terminology to CSS
+## Proportional Spacing or Uniform Spacing
 
-These are the mappings of design terminology to CSS properties. In my Sass modules, I always include variables named to align with design terminology at the top to provide easy access to designers.
+Remember that you can switch between proportional spacing and uniform spacing of the heading elements on our page by switching the units in the below code.
+
+```css
+.title,
+.author,
+.subtitle {
+	display: block;
+    margin: .618em 0;   //proportional 
+                        //  - or - 
+    margin: .618rem 0;  //uniform
+}   
+``` 
+
+## Mapping Design Terminology to CSS
+
+In my Sass modules, I always include variables named to align with design terminology at the top to provide easy access to designers.
 
 Design                     | CSS Property
 -------------------------- | ------------------------------------
@@ -124,18 +170,20 @@ ordinals                       | font-variant-numeric: ordinal
 
 ## Resources
 
+* [Google Fonts](https://www.google.com/fonts)
 * [Modular Scale](http://www.modularscale.com/)
 * [Sass calculator for modular scale](https://github.com/modularscale/modularscale-sass)
-* [FFFFallback font fallback bookmarklet tool](http://ffffallback.com/)
 * [Web Font Loader for progressively loading fonts from Google and TypeKit](https://github.com/typekit/webfontloader)
+* [FFFFallback font fallback bookmarklet tool](http://ffffallback.com/)
 * [Syntax for OpenType features in CSS from Adobe TypeKit](http://help.typekit.com/customer/portal/articles/1789736-syntax-for-opentype-features-in-css)
 * [CSS Shapes article on A List Apart](http://alistapart.com/article/css-shapes-101)
 * [CSS Shapes Polyfill](http://codepen.io/adobe/details/3b079a5671f21d140f47ffce3801ddfa/)
-* [Controlling widows from MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/widows)
-* [Controlling orphans from MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/orphans)
+* [Sass documentation](http://sass-lang.com/documentation/file.SASS_REFERENCE.html)
 * [Contrast Ratio Calculator for WCAG 2.0 compliance by Lea Verou](http://leaverou.github.io/contrast-ratio/)
 
 ## Contributions
+
+Feel free to submit questions, comments, or improvements to the exercise files or documentation.
 
 ## License
 
