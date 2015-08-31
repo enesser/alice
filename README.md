@@ -84,6 +84,7 @@ These are the mappings of design terminology to CSS properties. In my Sass modul
 Design                     | CSS Property
 -------------------------- | ------------------------------------
 size of type               | [font-size](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size)
+weight                     | [font-weight](https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight)
 typeface families          | [font-family](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family)
 tracking                   | [letter-spacing](https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing)
 kerning                    | [font-kerning](https://developer.mozilla.org/en-US/docs/Web/CSS/font-kerning)
@@ -92,7 +93,6 @@ leading (between elements) | [margin-top](https://developer.mozilla.org/en-US/do
 leading (inside elements)  | [line-height](https://developer.mozilla.org/en-US/docs/Web/CSS/line-height)
 widows                     | [widows](https://developer.mozilla.org/en-US/docs/Web/CSS/widows)
 orphans                    | [orphans](https://developer.mozilla.org/en-US/docs/Web/CSS/orphans)
-
 
 ## Additional OpenType Features in CSS
 
