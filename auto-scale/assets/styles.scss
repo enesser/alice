@@ -1,0 +1,112 @@
+@import url(https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic);
+
+:root {
+  font-size: 2vw;
+}
+
+//***********************************************************
+//** Story module
+//***********************************************************/
+.story {  
+  
+  //typography
+  $breakpoint-small: 40.625em;
+  $color-dropcap: DeepSkyBlue;
+  $color-pullquote: #ddd;
+  $leading-pagraph: 1.618em;
+  $measure: 34em;  
+  $size-title: 4.236em;
+  $size-author: 2.618em;
+  $size-subtitle: 1.618em;
+  $typeface-families: 'Lora', 'Verdana', 'serif'; 
+  
+  font-family: $typeface-families;
+  margin: 0 auto 6em;
+  max-width: $measure;
+
+  .title {
+    font-size: $size-title;
+    font-weight: normal;
+  }
+  
+  .author {
+    font-size: $size-author;
+    font-style: italic;
+  }
+  
+  .subtitle {
+    font-size: $size-subtitle;
+  }    
+  
+  .header {
+    text-align: center;
+  }
+  
+  .title,
+  .author,
+  .subtitle {
+    display: block;
+    margin: .618em 0;
+  }    
+  
+  .content {    
+    //drop cap
+    p:nth-of-type(1):first-letter {
+      color: $color-dropcap;
+      float: left;
+      font-size: ($size-title * 1.10);
+      line-height: .6;
+      margin-right: .1em;
+    }
+    
+    //pull quote
+    blockquote {            
+      font-style: italic;      
+      margin: 2em 0 -1em 2.4em;
+      padding: 0;            
+    }
+    
+    blockquote:before {
+      color: $color-pullquote;
+      content: '“';
+      float: left;      
+      font-size: $size-title;
+      font-style: normal;
+      margin: -.2em .1em 0 0;
+    }        
+    
+    blockquote:after {
+      clear: both;
+      content: '';            
+      display: block;      
+    }
+    
+    //paragraphs
+    p {
+      line-height: $leading-pagraph;
+    }
+    
+    //image
+    img {
+      float: right;
+      max-width: 18em;
+      padding-left: 1.6em;
+    }
+  }
+  
+  //breakpoint
+  @media screen and (max-width: $breakpoint-small) {    
+    max-width: 100%;
+    padding: 0 1em;
+   
+    .content {
+      font-size: 3.5vw;      
+      
+      img {
+        display: block;
+        float: none;
+        margin: 0 auto;
+      }
+    }    
+  }
+}

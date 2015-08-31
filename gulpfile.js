@@ -21,7 +21,8 @@ var stylesFolderPath = 'styles';
  * @type {Object}
  */
 var sourcePaths = {
-    sass: [assetsFolderPath + '/**/*.scss']
+    sass: [assetsFolderPath + '/**/*.scss'],
+    sassAutoScale: ['./auto-scale/' + assetsFolderPath + '/**/*.scss']
 };
 
 /**
@@ -30,7 +31,8 @@ var sourcePaths = {
  * @type {Object}
  */
 var destinationPaths = {
-    styles: stylesFolderPath
+    styles: stylesFolderPath,
+    stylesAutoScale: './auto-scale/' + stylesFolderPath
 };
 
 // gulp sass
@@ -39,6 +41,11 @@ gulp.task('sass', function() {
         .pipe(sass())
         .pipe(autoprefixer('last 2 version'))
         .pipe(gulp.dest(destinationPaths.styles));
+
+        gulp.src(sourcePaths.sassAutoScale)
+        .pipe(sass())
+        .pipe(autoprefixer('last 2 version'))
+        .pipe(gulp.dest(destinationPaths.stylesAutoScale));
 });
 
 // gulp watch
