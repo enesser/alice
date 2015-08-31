@@ -40,7 +40,7 @@ For ultimate control over how text wraps next to images, there’s [CSS shapes](
 
 A pull quote has been added to the exercise and demos.
 
-**Is there a way you can have CSS replace characters like straight quotes (4) with proper curly quotes (‘’)?**
+**Is there a way you can have CSS replace characters like straight quotes (') with proper curly quotes (‘’)?**
 
 There is no way to do this in CSS. In my pull quote example, you can see how I automatically insert a curly double quote (“) for the quotation using a psuedo-element so the user doesn’t have to type it.
 
