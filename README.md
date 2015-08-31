@@ -4,13 +4,13 @@ These files are my course materials for *Intro to Designing in the Browser: Crea
 
 In this short course, we transformed blocks of text from Lewis Carrol’s *Alice’s Adventures in Wonderland* into an attractive responsive website by selecting and setting type. We also created a responsive prototype that designers can use to experiment with web fonts before incorporating them into their designs.
 
+![Sample Screenshot](https://cloud.githubusercontent.com/assets/5659221/9574744/4b4938ea-4f8f-11e5-91f7-82de3b3a8d90.png)
+
 > See a demo of what we did on [CodePen](http://codepen.io/enesser/pen/JdgKjX).
 
 **or**
 
 > See a demo of text scaling to the browser on [CodePen](http://codepen.io/enesser/pen/LpPpJy).
-
-You can fork either demo for your own purposes.
 
 ## Breakdown of the Course
 
