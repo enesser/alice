@@ -31,7 +31,7 @@ terms and CSS.
 
 * How to use progressive font loading with [Web Font Loader](https://github.com/typekit/webfontloader) and [ffffallback](http://ffffallback.com/) so that users don't see a blank screen or screen jumping while fonts load (especially on mobile).
 
-* How we might [tease](#mapping-design-terminology-to-CSS) a typeface with tracking, weight, small caps, ligatures, or other features so that one typeface can serve many purposes.
+* How we might [tease](#mapping-design-terminology-to-css) a typeface with tracking, weight, small caps, ligatures, or other features so that one typeface can serve many purposes.
 
 ## Getting Started with the Materials
 
