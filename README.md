@@ -24,10 +24,10 @@ In this course, we covered:
 
 * How to [design to scale](#typographic-scale) for pleasing vertical rhythm.
 
-* The [mapping](#mapping-design-terminology-to-css) between designer 
+* The [mapping](#mapping-design-terminology-to-css) between designer
 terms and CSS.
 
-* How to use breakpoints for a responsive layout.
+* How to use content breakpoints over traditional breakpoints for a responsive layout.
 
 * How to use progressive font loading with [Web Font Loader](https://github.com/typekit/webfontloader) and [ffffallback](http://ffffallback.com/) so that users don't see a blank screen or screen jumping while fonts load (especially on mobile).
 
@@ -127,11 +127,11 @@ Remember that you can switch between proportional spacing and uniform spacing of
 .author,
 .subtitle {
 	display: block;
-    margin: .618em 0;   //proportional 
-                        //  - or - 
+    margin: .618em 0;   //proportional
+                        //  - or -
     margin: .618rem 0;  //uniform
-}   
-``` 
+}
+```
 
 ## Mapping Design Terminology to CSS
 
@@ -190,7 +190,7 @@ Feel free to submit questions, comments, or improvements to the exercise files o
 
 ## License
 
-*Alice’s Adventures in Wonderland* is by Lewis Carroll. 
+*Alice’s Adventures in Wonderland* is by Lewis Carroll.
 
 The illustration of Alice is by Sir John Tenniel.
 
