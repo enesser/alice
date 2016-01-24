@@ -154,21 +154,23 @@ orphans                    | [orphans](https://developer.mozilla.org/en-US/docs/
 
 These additional features can be enabled with OpenType fonts in CSS. Documentation is available from [TypeKit](http://help.typekit.com/customer/portal/articles/1789736-syntax-for-opentype-features-in-css) with illustrations.
 
-Design                         | CSS Property
+Design                         | CSS Property/HTML Entity
 ------------------------------ | ------------------------------------------------
-common ligatures               | font-variant-ligatures: common-ligatures
-contextual alternate ligatures | font-variant-ligatures: contextual
-discretionary ligatures        | font-variant-ligatures: discretionary-ligatures
-small caps                     | font-variant-caps: small-caps
-capitals to small caps         | font-variant-caps: all-small-caps
-swashes                        | font-feature-settings: 'swsh'
-stylistic alterate swashes     | font-feature-settings: 'salt'
-lining figures                 | font-variant-numeric: lining-nums
-oldstyle figures               | font-variant-numeric: oldstyle-nums
-proportional figures           | font-variant-numeric: proportional-nums
-tabular figures                | font-variant-numeric: tabular-nums
-fractions                      | font-variant-numeric: diagonal-fractions
-ordinals                       | font-variant-numeric: ordinal
+common ligatures               | [font-variant-ligatures: common-ligatures](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-ligatures)
+contextual alternate ligatures | [font-variant-ligatures: contextual](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-ligatures)
+discretionary ligatures        | [font-variant-ligatures: discretionary-ligatures](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-ligatures)
+small caps                     | [font-variant-caps: small-caps](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-caps)
+capitals to small caps         | [font-variant-caps: all-small-caps](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-caps)
+swashes                        | [font-feature-settings: 'swsh'](https://developer.mozilla.org/en-US/docs/Web/CSS/font-feature-settings)
+stylistic alterate swashes     | [font-feature-settings: 'salt'](https://developer.mozilla.org/en-US/docs/Web/CSS/font-feature-settings)
+lining figures                 | [font-variant-numeric: lining-nums](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-numeric)
+oldstyle figures               | [font-variant-numeric: oldstyle-nums](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-numeric)
+proportional figures           | [font-variant-numeric: proportional-nums](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-numeric)
+tabular figures                | [font-variant-numeric: tabular-nums](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-numeric)
+fractions                      | [font-variant-numeric: diagonal-fractions](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-numeric)
+ordinals                       | [font-variant-numeric: ordinal](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-numeric)
+non-breaking space             | &amp;amp;
+non-breaking hyphen            | &amp;#8209;
 
 ## Resources
 
