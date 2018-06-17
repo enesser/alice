@@ -93,14 +93,14 @@ I have added this as an example in the ``auto-scale`` folder. You can see a live
 
 Good typography uses curly quotes. The straight quotes come to us from the physical constraints of the typewriter and can make typography look industrial.
 
-    | Description           | Windows     | Mac                | HTML
---- | --------------------- | ----------- | ------------------ | -----
-'   | straight single quote | '           | '                  | '
-"   | straight double quote | "           | "                  | "
-‘   | opening single quote  | alt + 0145  | option + ]         | &lsquo;
-’   | closing single quote  | alt + 0146  | option + shift + ] | &rsquo;
-“   | opening double quote  | alt + 0147  | option + [         | &ldquo;
-”   | closing double quote  | alt + 0148  | option + shift + [ | &rdquo;
+Mark | Description           | Windows     | Mac                | HTML
+---- | --------------------- | ----------- | ------------------ | -----
+'    | straight single quote | '           | '                  | '
+"    | straight double quote | "           | "                  | "
+‘    | opening single quote  | alt + 0145  | option + ]         | &lsquo;
+’    | closing single quote  | alt + 0146  | option + shift + ] | &rsquo;
+“    | opening double quote  | alt + 0147  | option + [         | &ldquo;
+”    | closing double quote  | alt + 0148  | option + shift + [ | &rdquo;
 
 ## Typographic Scale
 
@@ -196,4 +196,4 @@ Feel free to submit questions, comments, or improvements to the exercise files o
 
 The illustration of Alice is by Sir John Tenniel.
 
-Other content by Eric J Nesser, 2015. MIT
+Other content by Eric J Nesser, 2015-2018. MIT
